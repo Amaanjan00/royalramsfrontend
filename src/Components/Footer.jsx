@@ -4,18 +4,12 @@ import Image from "next/image"
 export default function Footer() {
     return(
         <>
-        <div className="relative flex flex-col z-50 lg:flex-row lg:justify-between justify-center items-center gap-25 px-10 lg:px-20 py-15 bg-[#001233] text-white">
+        <div className="relative flex flex-col z-50 lg:flex-row lg:justify-between justify-center items-center xl:items-start gap-25 px-10 lg:px-20 py-15 bg-[#001233] text-white">
             <div className='flex lg:flex-row flex-col gap-25 text-[16px] font-bold'>
 
                 <div className="gap-3 flex lg:items-start items-center flex-col">
                     <h1 className='text-[#e09900] text-[18px]'>OUR SERVICES</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[16px]'>
-                        <li className='hover:text-[#e09900]'><Link href={"/umrahpackage"}>Umrah Packages</Link></li>
-                        <li className='hover:text-[#e09900]'><Link href={"/dubaipackage"}>Dubai Packages</Link></li>
-                        <li className='hover:text-[#e09900]'><Link href={""}>Flight Booking</Link></li>
-                        <li className='hover:text-[#e09900]'><Link href={""}>Visa Assistance</Link></li>
-                        <li className='hover:text-[#e09900]'><Link href={"/chaufferservice"}>Chauffeur service</Link></li>
-                        <li className='hover:text-[#e09900]'><Link href={""}>Hotel Stay</Link></li>
                         <li className='hover:text-[#e09900]'><Link href={""}>Transport</Link></li>
                         <li className='hover:text-[#e09900]'><Link href={""}>Group Booking</Link></li>
                         <li className='hover:text-[#e09900]'><Link href={""}>24/7 Support</Link></li>
@@ -44,7 +38,7 @@ export default function Footer() {
                 <div className="gap-3 flex lg:items-start items-center flex-col">
                     <h1 className='text-[#e09900] text-[18px]'>REVIEW US AT</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[16px]'>
-                        <li className='hover:text-[#e09900]'>
+                        <li className='hover:text-[#e09900] bg-white'>
                             <Link href={'/contact'}><img src="/tripadvisor.png" className="w-50" /></Link>
                             <Link href={'/contact'}><img src="/trustpilot.png" className="w-50" /></Link>
                         </li>
@@ -59,8 +53,25 @@ export default function Footer() {
                     width={300}
                     height={100}
                     priority
-                    className="object-contain brightness-0 invert-100"
+                    className="object-contain h-auto w-auto brightness-0 invert-100"
                 />
+                <div className="flex justify-between items-center">
+                    <a href="tel:+971507904850" className='flex justify-center items-center p-2 bg-transparent border-2 size-10 rounded-full'>
+                        <img className="brightness-100 invert" src="/phone.png" alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/royalramstourismllc/?igsh=ZzQyM2N3YWhlZXB0#" className='flex justify-center items-center p-2 bg-transparent border-2 size-10 rounded-full'>
+                        <img className="brightness-0 invert-100" src="/instagram.png" alt="" />
+                    </a>
+                    <a href="https://www.facebook.com/people/Royal-Rams-Tourism-LLC/61560255591622/" className='flex justify-center items-center p-2 bg-transparent border-2 size-10 rounded-full'>
+                        <img className="brightness-0 invert-100" src="/facebook.png" alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/royal-rams-tourism-llc/" className='flex justify-center items-center p-2 bg-transparent border-2 size-10 rounded-full'>
+                        <img className="brightness-0 invert-100" src="/linkedin.png" alt="" />
+                    </a>
+                    <a href="" className='flex justify-center items-center p-2 bg-transparent border-2 size-10 rounded-full'>
+                        <img className="brightness-0 invert-100" src="/tiktok.png" alt="" />
+                    </a>
+                </div>
             </div>
         </div>
 
