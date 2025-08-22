@@ -50,9 +50,10 @@ export default function Home() {
           <video className="h-full w-full object-cover" loop autoPlay muted src="/dubai.mp4" preload="auto"></video>
         </div>
         <div className='absolute top-0 w-full h-full bg-gradient-to-t from-gray-700/90'></div>
-        <div className='absolute text-white bottom-0 inset-x-0 p-10 lg:inset-x-20 lg:bottom-20 text-center items-center flex flex-col gap-5'>
+        <div className='absolute text-white bottom-0 inset-x-0 p-10 lg:inset-x-20 lg:bottom-10 text-center items-center flex flex-col gap-5'>
             <h1 className='text-4xl uppercase md:normal-case lg:text-5xl font-extrabold'>Your Swift Tour Awaits with</h1>
             <p className='text-[18px] uppercase md:normal-case lg:text-2xl'>Expert Guides & Transportation</p>
+            <a href="/packages" className="w-fit bg-purple-800 px-4 py-2 rounded-2xl">See All Packages</a>
         </div>
       </div>
 
