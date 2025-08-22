@@ -65,7 +65,7 @@ export default function Header() {
                             <div className='bg-white/50 backdrop-blur-2xl rounded-2xl shadow-2xl m-4'>
                                 <nav className='p-10'>
                                     <ul className='flex flex-col text-gray-500 text-[18px] font-bold gap-10 uppercase'>
-                                        <li onClick={handleClick}><a href="/tours/">Home</a></li>
+                                        <li onClick={handleClick}><a href="/">Home</a></li>
                                         <li onClick={handleClick}><a href="/tours/dubai-city-tour">Dubai City Tour</a></li>
                                         <li onClick={handleClick}><a href="/tours/abu-dhabi-city-tour">Abu Dhabi City Tour</a></li>
                                         <li onClick={handleClick}><a href="/tours/sightseeing-tours">Sightseeing Tours</a></li>
