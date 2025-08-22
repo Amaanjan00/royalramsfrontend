@@ -37,9 +37,9 @@ export default function Header() {
             </div>
 
             <div className='xl:hidden top-0 z-40 bg-white shadow-2xs items-center flex w-full justify-between pr-4'>
-                <div className='flex justify-center items-center p-4 w-50'>
+                <a href="/" className='flex justify-center items-center p-4 w-50'>
                     <img className='object-fill' src="/logo.png" alt="" />
-                </div>
+                </a>
 
                 <div onClick={() => setHead(true)} className='flex gap-4 justify-center items-center'>
                     <div className='flex justify-center items-center bg-transparent size-9'><img src="/menu.png" alt="" /></div>
