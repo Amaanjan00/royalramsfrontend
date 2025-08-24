@@ -20,13 +20,13 @@ export default function Header() {
 
                 <nav>
                     <ul className='hidden xl:flex gap-3 text-black'>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/dubai-city-tour">Dubai City Tour</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/abu-dhabi-city-tour">Abu Dhabi City Tour</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sightseeing-tours">Sightseeing Tours</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sea-odyssey">Sea Odyssey</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/desert-safari">Desert Safari</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/combo-adventures">Combo Adventures</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/blog">Blogs</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/dubai-city-tour">Dubai City Tour</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/abu-dhabi-city-tour">Abu Dhabi City Tour</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sightseeing-tours">Sightseeing Tours</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sea-odyssey">Sea Odyssey</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/desert-safari">Desert Safari</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/combo-adventures">Combo Adventures</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/blog">Blogs</a></li>
                     </ul>
                 </nav>
 
