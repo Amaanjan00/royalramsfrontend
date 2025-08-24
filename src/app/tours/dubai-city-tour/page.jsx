@@ -22,7 +22,7 @@ export default function DubaiCityTourPage() {
                     <h1 className="text-2xl xl:text-5xl text-center font-bold">Dubai City Tour</h1>
                 </div>
 
-                <div className="flex gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
 
                     {packages.map((card, index) => {
                     return(

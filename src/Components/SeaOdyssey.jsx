@@ -1,9 +1,20 @@
 'use client'
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Button from "./Button"
 
 export default function SeaOdyssey() {
     const [packages, setPackages] = useState([])
+
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+        if (scrollRef.current) {
+        scrollRef.current.scrollBy({
+            left: direction === "left" ? -200 : 200,
+            behavior: "smooth",
+        });
+        }
+    };
     
     useEffect(() => {
         fetch('/packages.json')
@@ -14,13 +25,15 @@ export default function SeaOdyssey() {
 
     return(
         <>
-            <div className="flex flex-col gap-5 max-w-full">
+            <div className="relative flex flex-col gap-5 max-w-full">
                 <div className="flex gap-3 items-center justify-center md:pt-15">
                     <img className="h-15 w-15" src="/sea-waves.png" alt="" />
                     <h1 className="text-2xl xl:text-5xl text-center font-bold">Sea Odyssey</h1>
                 </div>
 
-                <div className="flex gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
+                <button onClick={() => scroll("left")} className="bg-purple-400 h-10 w-10 rounded-full absolute left-0 bottom-70 ml-5">⬅️</button>
+
+                <div ref={scrollRef} className="flex gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
 
                     {packages.map((card, index) => {
                     return(
@@ -38,6 +51,8 @@ export default function SeaOdyssey() {
                     )
                     })}
                 </div>
+
+                <button onClick={() => scroll("right")} className="bg-purple-400 h-10 w-10 rounded-full absolute right-0 bottom-70 mr-5">➡️</button>
 
             </div>
         </>
