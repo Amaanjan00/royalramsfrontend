@@ -38,9 +38,9 @@ export default function Footer() {
                 <div className="gap-3 flex lg:items-start items-center flex-col">
                     <h1 className='text-[#e09900] text-[18px]'>REVIEW US AT</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[16px]'>
-                        <li className='hover:text-[#e09900] bg-white'>
-                            <Link href={'/contact'}><img src="/tripadvisor.png" className="w-50" /></Link>
-                            <Link href={'/contact'}><img src="/trustpilot.png" className="w-50" /></Link>
+                        <li className='hover:text-[#e09900]'>
+                            <Link href={'/contact'}><img src="/tripadvisor.png" className="w-50 invert-100 brightness-0" /></Link>
+                            <Link href={'/contact'}><img src="/trustpilot.png" className="w-50 invert-100 brightness-0" /></Link>
                         </li>
                     </ul>
                 </div>

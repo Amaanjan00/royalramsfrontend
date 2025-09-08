@@ -1,10 +1,12 @@
 'use client'
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
 
     const [head, setHead] = useState(false)
+    const pathname = usePathname()
     
     const handleClick = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
@@ -12,7 +14,7 @@ export default function Header() {
 
     return(
         <>
-            <div className='hidden top-0 bg-white shadow-2xs items-center xl:flex w-full justify-between px-0 xl:px-20'>
+            <div className='hidden top-0 bg-purple-100/50 backdrop-blur-2xl hover:bg-white transition-all duration-100 shadow-2xs items-center xl:flex w-full justify-between px-0 xl:px-20'>
 
                 <a href="/" className='flex justify-center items-center p-4 w-50'>
                     <img className='object-fill' src="/logo.png" alt="" />
@@ -20,13 +22,13 @@ export default function Header() {
 
                 <nav>
                     <ul className='hidden xl:flex gap-3 text-black'>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/dubai-city-tour">Dubai City Tour</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/abu-dhabi-city-tour">Abu Dhabi City Tour</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sightseeing-tours">Sightseeing Tours</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/sea-odyssey">Sea Odyssey</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/desert-safari">Desert Safari</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/tours/combo-adventures">Combo Adventures</a></li>
-                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 py-1 rounded-[10px] transition-all duration-400'><a href="/blog">Blogs</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/dubai-city-tour" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/dubai-city-tour">Dubai City Tour</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/abu-dhabi-city-tour" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/abu-dhabi-city-tour">Abu Dhabi City Tour</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/sightseeing-tours" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/sightseeing-tours">Sightseeing Tours</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/sea-odyssey" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/sea-odyssey">Sea Odyssey</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/desert-safari" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/desert-safari">Desert Safari</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/tours/combo-adventures" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/tours/combo-adventures">Combo Adventures</a></li>
+                        <li className='flex shrink-0 hover:bg-amber-400 hover:text-white px-2 rounded-2xl transition-all duration-200'><a className={`${pathname === "/blog" ? "bg-amber-400 text-white px-2 rounded-2xl" : ""}`} href="/blog">Blogs</a></li>
                     </ul>
                 </nav>
 

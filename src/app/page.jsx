@@ -53,7 +53,7 @@ export default function Home() {
         <div className='absolute text-white bottom-0 inset-x-0 p-10 lg:inset-x-20 lg:bottom-10 text-center items-center flex flex-col gap-5'>
             <h1 className='text-4xl uppercase md:normal-case lg:text-5xl font-extrabold'>Your Swift Tour Awaits with</h1>
             <p className='text-[18px] uppercase md:normal-case lg:text-2xl'>Expert Guides & Transportation</p>
-            <a href="/packages" className="w-fit bg-purple-800 px-4 py-2 rounded-2xl">See All Packages</a>
+            <a href="/packages" className="w-fit bg-blue-900 hover:bg-amber-400 px-4 py-2 rounded-2xl">See All Packages</a>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
       </div>
 
       <div className="h-full w-full xl:px-20 py-10 flex justify-center items-center">
-        <div className="bg-white flex flex-col xl:flex-row justify-between items-start xl:items-center px-12 py-6 rounded-2xl xl:rounded-full gap-5 md:gap-0 border-amber-400 xl:text-2xl border-5">
+        <div className="bg-white flex flex-col xl:flex-row justify-between items-start xl:items-center px-12 py-6 rounded-2xl xl:rounded-full gap-5 md:gap-9 border-amber-400 xl:text-[1em] border-5">
           <div className="h-auto w-auto flex justify-center items-center gap-2">
             <img className="h-15 w-15" src="/money.png" alt="" />
             <h2>Unbeatable Prices</h2>
