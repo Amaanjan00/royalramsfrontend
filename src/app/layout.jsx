@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
       <body className="flex flex-col min-h-screen">
 
         <div className="h-full w-full bg-blue-900 flex items-center justify-center text-white p-2">
-          <h1>50% off on all tour packages! <span className="bg-black px-2 py-1 rounded-full text-white font-bold">Book Now</span></h1>
+          <h1>50% off on all tour packages! <span className="underline"><a href="/packages">Book Now</a></span></h1>
         </div>
 
         <header className="sticky top-0 z-50"><Header /></header>
