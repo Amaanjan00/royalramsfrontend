@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from "react"
 import Button from "./Button"
+import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 
 export default function ComboAdventures() {
 
@@ -32,7 +33,7 @@ export default function ComboAdventures() {
                     <h1 className="text-2xl xl:text-5xl text-center font-bold">Combo Adventures</h1>
                 </div>
 
-                <button onClick={() => scroll("left")} className="bg-purple-400 h-10 w-10 rounded-full absolute left-0 bottom-70 ml-5">⬅️</button>
+                <button onClick={() => scroll("left")} className="bg-purple-400 h-10 w-10 rounded-full absolute left-0 bottom-70 ml-5 flex justify-center items-center"><ArrowLeftCircle /></button>
 
                 <div ref={scrollRef} className="flex gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
 
@@ -40,7 +41,7 @@ export default function ComboAdventures() {
                     {packages.map((card, index) => {
                     return(
                         <div key={index} className="shrink-0 h-fit w-fit xl:w-100 rounded-2xl flex flex-col overflow-clip shadow-2xl">
-                        <img className="object-cover aspect-auto h-70" src="https://placehold.co/600x400" alt="" />
+                        <img className="object-cover aspect-auto h-70" src="/trymore.svg" alt="" />
                         <div className="p-5 flex flex-col gap-3">
                             <h2 className="text-2xl">{card.package}</h2>
                             <p className="text-[18px]">{card.description}</p>
@@ -56,7 +57,7 @@ export default function ComboAdventures() {
 
                 </div>
                 
-                <button onClick={() => scroll("right")} className="bg-purple-400 h-10 w-10 rounded-full absolute right-0 bottom-70 mr-5">➡️</button>
+                <button onClick={() => scroll("right")} className="bg-purple-400 h-10 w-10 rounded-full absolute right-0 bottom-70 mr-5 flex justify-center items-center"><ArrowRightCircle /></button>
 
             </div>
         </>

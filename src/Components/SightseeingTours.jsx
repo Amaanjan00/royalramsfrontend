@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from "react"
 import Button from "./Button"
+import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 
 export default function SightseeingTours() {
 
@@ -32,7 +33,7 @@ export default function SightseeingTours() {
                     <h1 className="text-2xl xl:text-5xl text-center font-bold">Sightseeing Tours</h1>
                 </div>
 
-                <button onClick={() => scroll("left")} className="bg-purple-400 h-10 w-10 rounded-full absolute left-0 bottom-70 ml-5">⬅️</button>
+                <button onClick={() => scroll("left")} className="bg-purple-400 h-10 w-10 rounded-full absolute left-0 bottom-70 ml-5 flex justify-center items-center"><ArrowLeftCircle /></button>
 
                 <div ref={scrollRef} className="flex gap-10 overflow-x-scroll snap-x snap-mandatory scrollbar-hide p-5 pb-15 md:px-20 md:pb-20">
 
@@ -53,7 +54,7 @@ export default function SightseeingTours() {
                     })}
                 </div>
 
-                <button onClick={() => scroll("right")} className="bg-purple-400 h-10 w-10 rounded-full absolute right-0 bottom-70 mr-5">➡️</button>
+                <button onClick={() => scroll("right")} className="bg-purple-400 h-10 w-10 rounded-full absolute right-0 bottom-70 mr-5 flex justify-center items-center"><ArrowRightCircle /></button>
 
 
             </div>
